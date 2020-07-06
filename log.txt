@@ -1,0 +1,60 @@
+$ git log --pretty=format:%H "administrator/components/com_admin/admin.php" | tail -n 1
+> 186d63070a54fb9b4950b8f50738a5e371efe5b9
+$ git show -M --follow --name-status "186d63070a54fb9b4950b8f50738a5e371efe5b9" -- "administrator/components/com_admin/admin.php" | tail -n 1
+> R070	administrator/components/com_cpanel/toolbar.cpanel.php	administrator/components/com_admin/admin.php
+$ git log --pretty=format:%H "186d63070a54fb9b4950b8f50738a5e371efe5b9" -- "administrator/components/com_cpanel/toolbar.cpanel.php" | tail -n 1
+> 093c8f0408bbc945f6bc693af1c5ea90a50d4bf0
+$ git show -M --follow --name-status "093c8f0408bbc945f6bc693af1c5ea90a50d4bf0" -- "administrator/components/com_cpanel/toolbar.cpanel.php" | tail -n 1
+> C079	administrator/components/com_newsfeeds/toolbar.newsfeeds.php	administrator/components/com_cpanel/toolbar.cpanel.php
+$ git log --date=format:"%Y" --pretty=format:"%cd" "093c8f0408bbc945f6bc693af1c5ea90a50d4bf0" -- "administrator/components/com_cpanel/toolbar.cpanel.php" | tail -n 1
+> 2006
+$ git log --pretty=format:%H "plugins/system/log/log.xml" | tail -n 1
+> d2f80f823ed03b1afd08c968c80fa9df9e3be6e0
+$ git show -M --follow --name-status "d2f80f823ed03b1afd08c968c80fa9df9e3be6e0" -- "plugins/system/log/log.xml" | tail -n 1
+> R100	plugins/system/log.xml	plugins/system/log/log.xml
+$ git log --pretty=format:%H "d2f80f823ed03b1afd08c968c80fa9df9e3be6e0" -- "plugins/system/log.xml" | tail -n 1
+> 0f7ac2302192953a9108e6ec84ca27160021bcbe
+$ git show -M --follow --name-status "0f7ac2302192953a9108e6ec84ca27160021bcbe" -- "plugins/system/log.xml" | tail -n 1
+> C055	plugins/authentication/example.xml	plugins/system/log.xml
+$ git log --date=format:"%Y" --pretty=format:"%cd" "0f7ac2302192953a9108e6ec84ca27160021bcbe" -- "plugins/system/log.xml" | tail -n 1
+> 2007
+$ git log --pretty=format:%H "administrator/components/com_actionlogs/controllers/actionlogs.php" | tail -n 1
+> 9e990acc22c47cb5804e15f9f704e10b43ee2a87
+$ git show -M --follow --name-status "9e990acc22c47cb5804e15f9f704e10b43ee2a87" -- "administrator/components/com_actionlogs/controllers/actionlogs.php" | tail -n 1
+> R074	administrator/components/com_userlogs/controllers/userlogs.php	administrator/components/com_actionlogs/controllers/actionlogs.php
+$ git log --pretty=format:%H "9e990acc22c47cb5804e15f9f704e10b43ee2a87" -- "administrator/components/com_userlogs/controllers/userlogs.php" | tail -n 1
+> c3b7cd364ba436710a7f0832e3096c56750bd9f5
+$ git show -M --follow --name-status "c3b7cd364ba436710a7f0832e3096c56750bd9f5" -- "administrator/components/com_userlogs/controllers/userlogs.php" | tail -n 1
+> A	administrator/components/com_userlogs/controllers/userlogs.php
+$ git log --date=format:"%Y" --pretty=format:"%cd" "c3b7cd364ba436710a7f0832e3096c56750bd9f5" -- "administrator/components/com_userlogs/controllers/userlogs.php" | tail -n 1
+> 2018
+$ git log --pretty=format:%H "index.php" | tail -n 1
+> 5169e6a03c4013c911293fef82413817fec04635
+$ git show -M --follow --name-status "5169e6a03c4013c911293fef82413817fec04635" -- "index.php" | tail -n 1
+> A	index.php
+$ git log --date=format:"%Y" --pretty=format:"%cd" "5169e6a03c4013c911293fef82413817fec04635" -- "index.php" | tail -n 1
+> 2005
+$ git log --pretty=format:%H "libraries/src/Application/WebApplication.php" | tail -n 1
+> c343565619b7e966caff5b202f6c6dced1f0cec7
+$ git show -M --follow --name-status "c343565619b7e966caff5b202f6c6dced1f0cec7" -- "libraries/src/Application/WebApplication.php" | tail -n 1
+> R100	libraries/src/Joomla/CMS/Application/WebApplication.php	libraries/src/Application/WebApplication.php
+$ git log --pretty=format:%H "c343565619b7e966caff5b202f6c6dced1f0cec7" -- "libraries/src/Joomla/CMS/Application/WebApplication.php" | tail -n 1
+> f813ed50344bfc205751620858fd9d4978e07053
+$ git show -M --follow --name-status "f813ed50344bfc205751620858fd9d4978e07053" -- "libraries/src/Joomla/CMS/Application/WebApplication.php" | tail -n 1
+> R087	libraries/joomla/application/web.php	libraries/src/Joomla/CMS/Application/WebApplication.php
+$ git log --pretty=format:%H "f813ed50344bfc205751620858fd9d4978e07053" -- "libraries/joomla/application/web.php" | tail -n 1
+> 1f48e0ebca464d5197f353c50cc76842e43e44d7
+$ git show -M --follow --name-status "1f48e0ebca464d5197f353c50cc76842e43e44d7" -- "libraries/joomla/application/web.php" | tail -n 1
+> A	libraries/joomla/application/web.php
+$ git log --date=format:"%Y" --pretty=format:"%cd" "1f48e0ebca464d5197f353c50cc76842e43e44d7" -- "libraries/joomla/application/web.php" | tail -n 1
+> 2011
+$ git log --pretty=format:%H "administrator/components/com_actionlogs/actionlogs.php" | tail -n 1
+> 9e990acc22c47cb5804e15f9f704e10b43ee2a87
+$ git show -M --follow --name-status "9e990acc22c47cb5804e15f9f704e10b43ee2a87" -- "administrator/components/com_actionlogs/actionlogs.php" | tail -n 1
+> R068	administrator/components/com_userlogs/userlogs.php	administrator/components/com_actionlogs/actionlogs.php
+$ git log --pretty=format:%H "9e990acc22c47cb5804e15f9f704e10b43ee2a87" -- "administrator/components/com_userlogs/userlogs.php" | tail -n 1
+> c3b7cd364ba436710a7f0832e3096c56750bd9f5
+$ git show -M --follow --name-status "c3b7cd364ba436710a7f0832e3096c56750bd9f5" -- "administrator/components/com_userlogs/userlogs.php" | tail -n 1
+> C064	administrator/components/com_plugins/plugins.php	administrator/components/com_userlogs/userlogs.php
+$ git log --date=format:"%Y" --pretty=format:"%cd" "c3b7cd364ba436710a7f0832e3096c56750bd9f5" -- "administrator/components/com_userlogs/userlogs.php" | tail -n 1
+> 2018
