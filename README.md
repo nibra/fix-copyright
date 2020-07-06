@@ -37,9 +37,9 @@ and the whole thread about that: --follow is buggy, but maybe it won't be fixed.
 The solution, which is re-implemented here, is to
 
 1. Get the first commit of the file *with that name*
-2. Get the status (`added`, `copied` or `renamed`) of that commit
-3. Stop, if status is `added` or `copied`, this really is the first commit.
-4. Status is `renamed`, so get the first commit of the file *with the previous name* before the current commit.
+2. Get the status (`Added`, `Copied` or `Renamed`) of that commit
+3. Stop, if status is `Added` or `Copied`, this really is the first commit.
+4. Status is `Renamed`, so get the first commit of the file *with the previous name* before the current commit.
 5. Continue with step 2.
  
 ## How to adopt the scripts for your environment
@@ -66,6 +66,6 @@ You might want to adjust the default year in lines 18 and 20 here the default ye
 
 ## ToDo
 
-[_] Move functionality from `fix-copyright.sh` to `fix-copyright.php`
-[_] Provide `PATTERN`, `OWNER` and `CONTACT` as command line parameters
-[_] Escape pattern internally 
+- [ ] Move functionality from `fix-copyright.sh` to `fix-copyright.php`
+- [ ] Provide `PATTERN`, `OWNER` and `CONTACT` as command line parameters
+- [ ] Escape pattern internally 
