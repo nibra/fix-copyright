@@ -15,6 +15,14 @@ was done by a script, this process kept polluting the file history all the time 
 Thus, the Production Department leadership of Joomla decided in mid-2020 to follow the 
 advice in this excellent article about [how and why to properly write copyright statements](https://matija.suklje.name/how-and-why-to-properly-write-copyright-statements-in-your-code).
 
+Some people consider this change pointless, but, as [Michael Babker nailed it](https://github.com/joomla/joomla-cms/pull/29689#issuecomment-646229342),
+
+> This might come across as a pointless change, but the other pointless change is 
+> modifying every file in every Joomla owned repository in January to amend the ending 
+> date of the copyright claim. Additionally, a copyright claim is being made on every
+> file in most every Joomla owned repository of a copyright dating back to 2005, which
+> is clearly not factual.
+
 ## How it works
 
 The original approach to determine the creation date for a file was
