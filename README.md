@@ -28,7 +28,7 @@ unexpected results.
 
 The `Git > Show History` function of PhpStorm, on the other hand, gave very plausible results for the first commit,
 and some research revealed the [implementation in IntelliJ](https://github.com/JetBrains/intellij-community/blob/ea20241265f9fb956c5a99b1023765aa0e941979/plugins/git4idea/src/git4idea/history/GitFileHistory.java) (which is the base for PhpStorm).
-The people at JetBrains fount, that 
+The people at JetBrains found that 
 
 > `git log --follow` does detect renames, but it has a bug - merge commits
 aren't handled properly: they just disappear from the history. See http://kerneltrap.org/mailarchive/git/2009/1/30/4861054
