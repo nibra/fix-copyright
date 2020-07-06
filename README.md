@@ -23,7 +23,7 @@ The original approach to determine the creation date for a file was
 YEAR=$(git log --follow --date=format:%Y --pretty=format:"%cd" --diff-filter=A --find-renames=40% "${FILE}" | tail -n 1)
 ```
 
-However, the results were disappointing. `git` itself uses content similarity to find renames, whch led to
+However, the results were disappointing. `git` itself uses content similarity to find renames, which led to
 unexpected results.
 
 The `Git > Show History` function of PhpStorm, on the other hand, gave very plausible results for the first commit,
@@ -55,7 +55,7 @@ CONTACT="https://www.joomla.org"
 
 Be aware of the different kinds of escaping for `grep` rsp. `sed`.
 
-You might want to adjust the default year in lines 18 and 20 here the default year is `2005`):
+You might want to adjust the default year in lines 18 and 20 (here the default year is `2005`):
 ```bash
     if [[ ${FILE} == *.xml ]]; then
       REPLACEMENT="(C) ${YEAR:-2005} ${OWNER}"
