@@ -16,5 +16,8 @@
         "psr-4": {
             "NX\\": "src"
         }
-    }
+    },
+    "bin": [
+        "bin/nibra/fix-copyright.sh"
+    ]
 }
