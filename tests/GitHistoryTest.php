@@ -21,7 +21,7 @@ class GitHistoryTest extends TestCase
 
     public function setUp(): void 
     {
-        $joomlaRoot                     = '/home/nibra/Development/joomla-cms/';
+        $joomlaRoot                     = ROOT_DIR;
         $this->originalWorkingDirectory = getcwd();
         chdir($joomlaRoot);
         
@@ -39,10 +39,8 @@ class GitHistoryTest extends TestCase
     public function cases(): array
     {
         return [
-            ['administrator/components/com_admin/admin.php', '2006'],
             ['index.php', '2005'],
-            ['administrator/components/com_actionlogs/controllers/actionlogs.php', '2018'],
-            ['administrator/components/com_actionlogs/actionlogs.php', '2018'],
+            ['administrator/components/com_actionlogs/src/Controller/ActionlogsController.php', '2018'],
             ['plugins/system/log/log.xml', '2007'],
             ['libraries/src/Application/WebApplication.php', '2011'],
         ];

@@ -15,7 +15,7 @@
     </testsuites>
 
     <php>
-        <const name="ROOT_DIR" value="/home/nibra/Development/joomla/joomla-cms"/>
+        <const name="ROOT_DIR" value="/absolute/path/to/the/files/to/fix"/>
     </php>
 
     <filter>
