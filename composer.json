@@ -18,6 +18,6 @@
         }
     },
     "bin": [
-        "bin/nibra/fix-copyright.sh"
+        "bin/fix-copyright.sh"
     ]
 }
