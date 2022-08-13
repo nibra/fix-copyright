@@ -1,4 +1,4 @@
-#!/usr/bin/env zsh
+#!/usr/bin/env bash
 
 ROOT=${PWD}
 GREP_PATTERN="(Copyright )?\(C\) .* Open Source Matters.*All rights reserved\.?"
@@ -9,10 +9,11 @@ CONTACT="https://www.joomla.org"
 main() {
   echo "Processing files in ${ROOT}"
 
+  SCRIPT_DIR=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
   COUNT=0
 
   for FILE in $(grep -rilP "${GREP_PATTERN}" --exclude-dir="vendor" "${ROOT}"); do
-    YEAR=$(php fix-copyright.php ${FILE})
+    YEAR=$(php ${SCRIPT_DIR}/fix-copyright.php ${FILE})
 
     if [[ ${FILE} == *.xml ]]; then
       REPLACEMENT="(C) ${YEAR:-2005} ${OWNER}"
